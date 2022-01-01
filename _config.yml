@@ -111,3 +111,5 @@ friends: [
         href: "https://space.bilibili.com/36549646"
     }
 ]
+
+theme: jekyll-theme-cayman
