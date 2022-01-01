@@ -1,0 +1,113 @@
+# Site settings
+title: AlgoIdeas
+SEOTitle: 博客&分享
+header-img: img/home-bg-o.jpg
+email: yu19881234@163.com
+description: "博客&分享"
+keyword: "博客, 分享, 嵌入式"
+url: "https://algoideas.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/algoideas/algoideas" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Goals determine what you're going to be!"
+sidebar-avatar: /img/about-algoideas.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings
+RSS: false
+# weibo_username:     algoideas
+# zhihu_username:     algoideas
+# github_username:    algoideas
+# facebook_username:  algoideas
+# jianshu_username:   algoideas
+# twitter_username:   algoideas
+
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: algoideas
+
+# Gitalk
+gitalk:
+  enable: false    #是否开启Gitalk评论
+  clientID: ab48bfeafb1562ae8222                            #生成的clientID
+  clientSecret: cec2cc1d480e8feb32ac684a49333b149e41bb15    #生成的clientSecret
+  repo: algoideas.gitee.io    #仓库名称
+  owner: algoideas    #github用户名
+  admin: algoideas
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+# Giteement 
+# 关于如何集成:https://www.jianshu.com/p/f5c4633524c7
+# 基于码云的评论系统(https://gitee.com/zhousiwei/giteement)
+giteement:
+  enable: true  # 是否启用码云评论系统
+  # 是否使用官方js(false可以提升访问速度)
+  remote: false
+  redirect_uri: 'https://algoideas.gitee.io'   # 应用回调地址(请和配置的第三方应用保持一致)
+  # 不能更改(网上开源项目https://github.com/Rob--W/cors-anywhere作者提供的专门用来跨域服务器的配置)
+  oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
+  giteeID: 'algoideas'  # 你的码云账号英文名
+  # 存储评论的 repo name(需要在码云仓库创建公开仓库)
+  repo: 'algoideas'
+  gitment_oauth:
+    client_id: '514df29642de4a7f73e5de04ed886491a9a9288554254a15c10817bfd67753b6'           #client ID
+    client_secret: 'd9f8be746b1c84f692d17566c22389218fbffb1752d0ac748ac293a6ac09d7bd'       #client secret
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 0860bf4d0c1030c714261d93addd6116
+
+# Google Analytics
+# ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
+# ga_domain: auto                         # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+# 友情链接
+friends: [
+    {
+        title: "Gitee主页",
+        href: "https://algoideas.gitee.io"
+    },{
+        title: "Bilibili主页",
+        href: "https://space.bilibili.com/36549646"
+    }
+]
